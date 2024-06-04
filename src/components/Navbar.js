@@ -10,6 +10,12 @@ const Navbar = () => (
       <Link to="/create" className="text-white">
         Create Restaurant
       </Link>
+      <Link to="/restaurant/:id" className="text-white">
+        Restaurant Details
+      </Link>
+      <Link to="/update/:id" className="text-white">
+        Update Restaurant Information
+      </Link>
     </div>
   </nav>
 );

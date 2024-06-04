@@ -7,12 +7,12 @@ const RestaurantDetail = () => {
   const [restaurant, setRestaurant] = useState(null);
 
   useEffect(() => {
-    const fetchRestaurants = async () => {
-      const response = await axios.get(`/api/restaurants/${id}`);
+    const fetchRestaurant = async () => {
+      const response = await axios.get(`/api/restaurant/${id}`);
       setRestaurant(response.data);
     };
 
-    fetchRestaurants();
+    fetchRestaurant();
   }, [id]);
 
   if (!restaurant) return <div>Loading...</div>;

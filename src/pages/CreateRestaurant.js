@@ -4,7 +4,7 @@ import axios from "axios";
 
 const CreateRestaurant = () => {
   const createRestaurant = async (data) => {
-    await axios.post("/api/restaurants", data);
+    await axios.post("/api/restaurant", data);
   };
 
   return (

@@ -9,7 +9,7 @@ const UpdateRestaurant = () => {
 
   useEffect(() => {
     const fetchRestaurants = async () => {
-      const response = await axios.get(`/api/restaurants/${id}`);
+      const response = await axios.get(`/api/restaurant/${id}`);
       setRestaurant(response.data);
     };
 
@@ -17,7 +17,7 @@ const UpdateRestaurant = () => {
   }, [id]);
 
   const updateRestaurant = async (data) => {
-    await axios.put(`/api/restaurants/${id}`, data);
+    await axios.put(`/api/restaurant/${id}`, data);
   };
 
   if (!restaurant) return <div>Loading...</div>;

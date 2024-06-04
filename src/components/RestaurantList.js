@@ -7,7 +7,7 @@ const RestaurantList = () => {
 
   useEffect(() => {
     const fetchRestaurants = async () => {
-      const response = await axios.get("/api/restaurants");
+      const response = await axios.get("/api/restaurant");
       setRestaurants(response.data);
     };
     fetchRestaurants();
