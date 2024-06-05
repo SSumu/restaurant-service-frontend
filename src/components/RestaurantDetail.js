@@ -7,9 +7,13 @@ const RestaurantDetail = () => {
   const [restaurant, setRestaurant] = useState(null);
 
   useEffect(() => {
-    const fetchRestaurant = async () => {
-      const response = await axios.get(`/api/restaurant/${id}`);
-      setRestaurant(response.data);
+    const fetchRestaurant = async (id) => {
+      try {
+        const response = await axios.get(`/api/restaurant/${id}`);
+        setRestaurant(response.data);
+      } catch (error) {
+        console.error("Error fetching restaurant:", error);
+      }
     };
 
     fetchRestaurant();
