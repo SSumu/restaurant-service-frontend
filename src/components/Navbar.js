@@ -7,13 +7,13 @@ const Navbar = () => (
       <Link to="/" className="text-white mr-4">
         Home
       </Link>
-      <Link to="/create" className="text-white">
+      <Link to="/create" className="text-white mr-4">
         Create Restaurant
       </Link>
-      <Link to="/restaurant/:id" className="text-white">
+      <Link to="/restaurant/:id" className="text-white mr-4">
         Restaurant Details
       </Link>
-      <Link to="/update/:id" className="text-white">
+      <Link to="/update/:id" className="text-white mr-4">
         Update Restaurant Information
       </Link>
     </div>
